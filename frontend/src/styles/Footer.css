@@ -1,0 +1,144 @@
+.footer{
+    width:100%;
+    height:auto;
+    margin-top:180px;
+    background-color: #F1EADC;
+}
+
+.footer-navbar {
+    max-width:1200px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.footer-logo {
+    width: 18px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-logo-text {
+    font-size: 16px;
+    color:black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-navbar-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-navbar-menu li {
+    margin: 0 15px;
+}
+
+.footer-navbar-menu a {
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.footer-contact-info{
+    padding-top:40px;
+    line-height: 30px;
+    color:black;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+.footer-soc-media i{
+    font-size:22px;
+    padding-inline:5px;
+}
+
+.footer-content{
+    padding:20px;
+    display:flex;
+    max-width:1200px;
+    margin:auto;
+    justify-content: space-between;
+}
+
+.footer-content-img{
+    height:22px;
+    width:60px;
+    display:block;
+    margin:20px;
+}
+
+.footer-content-list{
+    list-style: none;
+    line-height:28px;
+}
+
+@media only screen and (min-width: 390px) and (max-width: 1120px){
+
+
+    .footer{
+        margin-top: 80px;
+    }
+
+    .footer img{
+        margin-top:20px;
+        margin-left:70px;
+
+    }
+
+    .footer-logo-text,.footer-tel,.footer-e-mail,.footer-content-img{
+        display:none;
+        visibility: hidden;
+    }
+
+    .footer-navbar{
+        padding-inline:0px;
+    }
+
+    .footer img{
+        margin-left:10px;
+    }
+
+    .footer-logo{
+        width:15px;
+    }
+
+    .footer-navbar-menu{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        margin-top: 20px;
+        gap:5px;
+    }
+
+    .footer-navbar-menu li{
+        margin:12px;
+    }
+
+    .footer-navbar-menu a{
+        padding:0px;
+        font-size:12px;
+    }
+
+   .footer-media{
+    display: none;
+   }
+   
+    .footer-content-list li{
+        font-size:12px;
+    }
+
+
+}
+    
