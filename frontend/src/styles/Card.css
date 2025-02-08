@@ -1,0 +1,17 @@
+.card-img{
+    background-size: cover;
+    width:350px;
+    height:478px;
+}
+
+.img-content{
+    font-size:20px;
+    padding-top:10px;
+    text-align: center;
+}
+
+.img-content-p{
+    padding:10px 0px;
+    text-align: center;
+    color:#998E78;
+}
