@@ -1,0 +1,60 @@
+.wrapper-about{
+    max-width:1200px;
+    margin:auto;
+}
+
+.wrapper{
+    max-width:1200px;
+    width:100%;
+}
+
+.section-main-collection-first-about,.section-main-collection-second-about{
+    margin-top:120px;
+    display:flex;
+    gap:50px;
+    align-items: center;
+    padding-inline:15px;
+   
+}
+
+.section-main-collection-first-about-img{
+    background-image: url('../../public/images/Frame\ 34.png');
+    background-size: cover;
+    width:442px;
+    height:547px;
+}
+
+.section-main-collection-second-about-img{
+    background-image: url('../../public/images/Frame\ 34\ \(1\).png');
+    background-size: cover;
+    width:442px;
+    height:547px;
+}
+
+.section-main-collection-first-about-content,.section-main-collection-second-about-content{
+    width:515px;
+    margin-left:30px;
+}
+
+h4{
+    margin-bottom:40px;
+    font-size:25px;
+    font-weight:500;
+}
+
+.section-main-collection-first-about-content .p,.section-main-collection-second-about-content .p{
+    margin-top:20px;
+}
+
+.about-btn{
+    display:block;
+    margin: 100px auto;
+    text-align: center;
+    width:260px;
+    background-color: #6E9C9F;
+    color:white;
+    padding:12px 15px;
+    border:2px solid  #6E9C9F;
+    font-size:17px;
+  
+}
