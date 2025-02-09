@@ -1,0 +1,108 @@
+.items{
+    margin-top:150px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom:1px solid #CCCCCC;
+}
+
+.item{
+    margin-bottom:30px;
+}
+
+.first-item-list{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    gap:220px;
+}
+
+.second-item-list{
+    gap:270px;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+}
+
+.items-img{
+    display: flex;
+    margin-top:20px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.coupon-items{
+    margin-top:80px;
+    display:flex;
+    gap:20px;
+}
+
+.coupon-input{
+   padding:30px 0px;
+    background-color:transparent;
+    width:255px;
+    border:none;
+    border-bottom:1px solid black;
+    text-align: start;
+    color:#868686;
+}
+
+.coupon-btn{
+    color:#6E9C9F;
+    border:1px solid #6E9C9F;
+    padding:0px 71px;
+    font-size:17px;
+    background-color: white;
+}
+
+.coupon-basket{
+   padding:0px 71px;
+   margin-left: auto;
+   background-color: white;
+   color:#6E9C9F;
+   border:1px solid #6E9C9F;
+}
+
+.img{
+    background-image:url('../../public/images/Фото\ товара@2x.png');
+    background-size: cover;
+    width:137px;
+    height:179px;
+}
+
+.choosen-items{
+    display:flex;
+    gap:50px;
+    align-items: center;
+}
+
+.main-footer-container{
+    text-align:center;
+    margin-top:60px;
+}
+
+.main-footer-end{
+    margin-top:30px;
+    display:flex;
+    justify-content: end;
+    gap:30px;
+}
+
+.main-footer-end-text{
+    display:flex;
+    justify-content: end;
+    gap:30px;
+    background-color:#F1EADC ;
+    padding:15px 45px;
+}
+
+.main-footer-end-btn {
+    padding-inline:45px;
+    background-color:#6E9C9F ;
+    border:1px solid #6E9C9F;
+    
+}
+
+.main-footer-end-btn a{
+    color:white;
+}
