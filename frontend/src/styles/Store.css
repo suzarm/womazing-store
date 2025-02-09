@@ -1,0 +1,63 @@
+.wrapper{
+    max-width:1200px;
+    width:100%;
+}
+
+.section-collection-main-images{
+    max-width:1200px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:40px;
+    margin-inline:15px;
+    gap:10px;
+}
+
+.section-main-collection-name-list{
+    margin-top:90px;
+    padding-inline:15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+   
+}
+
+.section-main-collection-name-list li{
+    border:1px solid black;
+    padding:20px 80px;
+}
+
+.black{
+    background-color: black;
+    color:white;
+}
+
+.next-page{
+    margin:80px;
+    text-align: center;
+}
+
+.next-page span{
+    font-size:17px;
+    margin-inline:10px;
+   
+}
+
+.next-page i{
+    font-size:22px;
+    color:black;
+    border:1px solid red;
+}
+
+ .first-number{
+    color:white;
+    border:1px solid black;
+    background-color: black;
+    padding:10px 15px;
+}
+
+.second-number{
+    border:1px solid black;
+    padding:10px 15px;
+}
