@@ -20,18 +20,18 @@
 
 .header-main-pic{
     position:absolute;
-    width:434px;
-    height:652px;
-    top: 120px;
-    right:390px;
+    width:420px;
+    height:602px;
+    top: 100px;
+    right:310px;
     background-image: url('../../public/images/header-main-pic.png');
-    background-size: cover;
+    background-position: center;
 }
 
 .header-left-pic{
     position:absolute;
     bottom:0px;
-    right:717px;
+    right:617px;
     width:190px;
     height:318px;
     background-image: url('../../public/images/header-left-pic.png');
@@ -44,8 +44,8 @@
     background-size: cover;
     width:197px;
     height:197px;
-    top:256px;
-    right:286px;
+    top:206px;
+    right:206px;
 }
 
 .header-title{
