@@ -1,11 +1,11 @@
+import '../styles/BreadCrumb.css'
 
-
-function BreadCrumb({pageName}) {
+function BreadCrumb({homelabel,pageName}) {
     return (
-        <>
-        <h1></h1>
-       <p>home - {pageName}
-        </>
+        <div className="section-main">
+            <h1>{pageName}</h1>
+            <p>{homelabel} - <span style={{color:'gray'}}>{pageName}</span></p>
+        </div>
     );
   }
   
