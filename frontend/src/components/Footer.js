@@ -1,5 +1,8 @@
 import '../styles/Footer.css';  
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faInstagram} from '@fortawesome/free-brands-svg-icons';
+import {faFacebook} from '@fortawesome/free-brands-svg-icons';
+import {faTwitter} from '@fortawesome/free-brands-svg-icons';
 
 
 function Footer() {
@@ -35,9 +38,9 @@ function Footer() {
                 </ul>
                 <div className="footer-media">
                     <div className="footer-soc-media">
-                        <i className="fa-brands fa-instagram"></i>
-                        <i className="fa-brands fa-facebook"></i>
-                        <i className="fa-brands fa-twitter"></i>
+                        <FontAwesomeIcon icon={faInstagram} />
+                        <FontAwesomeIcon icon={faFacebook} />
+                        <FontAwesomeIcon icon={faTwitter} />
                     </div>
                     <img src="/images/visa-mastercard 1.png" className="footer-content-img" />
                 </div> 
