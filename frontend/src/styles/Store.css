@@ -30,7 +30,7 @@
 
 .black{
     background-color: black;
-    color:white;
+    color: white !important;
 }
 
 .next-page{

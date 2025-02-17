@@ -3,6 +3,7 @@
     width:100%;
     padding-inline:5px;
 }
+
 .section-main-card{
     margin:140px auto;
     width: 1199px;
@@ -30,27 +31,34 @@
     font-size:25px;
     margin-top:80px;
 }
-.section-main-form-input {
+
+.section-main-form {
     display:flex;
     flex-direction: column;
 }
-.section-main-form-input input{
+
+.section-main-form input{
+    display:block;
     width:350px;
+    padding:8px;
     border:none;
     border-bottom:1px solid #000000;
   
 }
 
-.section-main-form-input label{
-    margin-top:25px;
+.section-main-form label{
+    padding-top:10px;
+    display: block;
+    margin-bottom: 5px;
     color:#868686;
 }
 
-.message-border{
+.message-input{
     margin-top:100px;
 }
 
 .form-btn{
+    width:200px;
     margin-top:30px;
     color:white;
     background-color:#6E9C9F;
@@ -65,4 +73,9 @@
     border:1px solid #F1EADC;
     padding:30px 76px;
     margin-top:120px;
+}
+
+.error-message{
+    color:red;
+    font-size:14px;
 }

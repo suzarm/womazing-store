@@ -1,11 +1,12 @@
 import '../styles/Card.css'
 
-function Card({img,title ,text}) {
+function Card({image,description ,name,price}) {
     return (
         <div className="card">
-            <div className='card-img' style={{ backgroundImage: `url('${img}')` }}></div>
-            <p className="img-content">{title}</p>
-            <p className="img-content-p">{text}</p>
+            <div className='card-img' style={{ backgroundImage: `url('${image}')` }}></div>
+            <p className="img-content">{description}</p>
+            <p className="img-content-p">{name}</p>
+            <p className='img-content-price'>${price}</p>
         </div>
     )
 

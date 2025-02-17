@@ -1,45 +1,66 @@
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
 import Card from '../components/Card';
 import BreadCrumb from '../components/BreadCrumb';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import {useState,useEffect} from "react";
+
+
 import '../styles/Store.css';  
 
 function Store() {
-    const cards= [
-        {img:'./images/Фото\ товара@2x.png',title:'Футболка USA',text:'$129'},
-        {img:'./images/christopher-campbell-va0YmkIFtPA-unsplash\ 1\ \(1\).png',title:'Купальник Glow',text:'$129'},
-        {img:'./images/Фото\ товара.png',title:'Свитшот Sweet Shot',text:'$129'},
-        {img:'./images/Фото\ товара@2x.png',title:'Футболка USA',text:'$129'},
-        {img:'./images/christopher-campbell-va0YmkIFtPA-unsplash\ 1\ \(1\).png',title:'Купальник Glow',text:'$129'},
-        {img:'./images/Фото\ товара.png',title:'Свитшот Sweet Shot',text:'$129'},
-        {img:'./images/Фото\ товара@2x.png',title:'Футболка USA',text:'$129'},
-        {img:'./images/christopher-campbell-va0YmkIFtPA-unsplash\ 1\ \(1\).png',title:'Купальник Glow',text:'$129'},
-        {img:'./images/Фото\ товара.png',title:'Свитшот Sweet Shot',text:'$129'},
 
-    ]
+    const[cards,setCards]=useState([])
+
+    const[selectedCategory,setSelectedCategory]=useState("");
+    
+    useEffect(() =>{
+        fetch('http://localhost:3000/products')
+        .then(res => res.json())
+        .then(data => setCards(data))
+    },[])
+
+    useEffect(()=>{
+        fetch('http://localhost:3000/products?category=' + selectedCategory)
+        .then(res => res.json())
+        .then(data => setCards(data))
+    },[selectedCategory])
+
     return (
         <>
             <div className='wrapper'>
                 <Navbar></Navbar>
                 <BreadCrumb homelabel= "Главная" pageName="Магазин"></BreadCrumb>
-                <div class="section-main-collection-name">
-                    <ul class="section-main-collection-name-list">
-                        <li class="black">Все</li>
-                        <li>Пальто</li>
-                        <li>Свитшоты</li>
-                        <li>Кардиганы</li>
-                        <li>Толстовки</li>
+                <div className="section-main-collection-name">
+                    <ul className="section-main-collection-name-list">
+                        <li className={selectedCategory === "" ? "black" : ""}
+                            onClick={() => setSelectedCategory("")}>Все
+                        </li>
+                        <li className={selectedCategory === "Пальто" ? "black" : ""}
+                            onClick={() =>setSelectedCategory("overcoat")}>Пальто
+                        </li>
+                        <li  className={selectedCategory === "Топы" ? "black" : ""}
+                             onClick={() => setSelectedCategory("tops")}>Топы
+                        </li>
+                        <li   className={selectedCategory === "Кардиганы" ? "black" : ""}
+                              onClick={() =>setSelectedCategory("cardigans")}> Кардиганы
+                        </li>
+                        <li className={selectedCategory === "Толстовки" ? "black" : ""}
+                            onClick={() =>setSelectedCategory("sweetshot")}>Толстовки
+                        </li>
                     </ul>
                 </div>
                 <div className='section-collection-main-images'>
-                {
-                    cards.map((card) => <Card img= {card.img} title={card.title} text={card.text}></Card>)
-                }
+                    {
+                        cards.map((card) => <Card image= {card.image} description={card.description} name={card.name} price={card.price}></Card>)
+                    }
                 </div>
-                <div class="next-page">
-                    <span class="first-number">1</span>
-                    <span class="second-number">2</span>
-                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                <div className="next-page">
+                    <span className="first-number">1</span>
+                    <span className="second-number">2</span>
+                     <FontAwesomeIcon icon={faArrowRight} size="lg"  />
                 </div>
             </div>
             <Footer></Footer>

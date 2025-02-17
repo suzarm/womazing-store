@@ -20,10 +20,11 @@
 
 .header-main-pic{
     position:absolute;
-    width:420px;
-    height:602px;
-    top: 100px;
-    right:310px;
+    background-size: cover;
+    width: 439px;
+    height:652px;
+    top: 120px;
+    right:390px;
     background-image: url('../../public/images/header-main-pic.png');
     background-position: center;
 }
@@ -31,7 +32,7 @@
 .header-left-pic{
     position:absolute;
     bottom:0px;
-    right:617px;
+    right:717px;
     width:190px;
     height:318px;
     background-image: url('../../public/images/header-left-pic.png');
@@ -42,10 +43,10 @@
     position:absolute;
     background-image: url('../../public/images/header-right-pic.png');
     background-size: cover;
-    width:197px;
-    height:197px;
-    top:206px;
-    right:206px;
+    width:190px;
+    height:190px;
+    top:256px;
+    right:289px;
 }
 
 .header-title{

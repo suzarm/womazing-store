@@ -4,7 +4,11 @@ var ProductModel = require("../models/product");
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  ProductModel.find({}).sort({}).exec(function(err,result){
+  const filter = {};
+  if ( req.query.category){
+    filter.category= req.query.category;
+  }
+  ProductModel.find(filter).sort({}).exec(function(err,result){
     if(err){
         return next(err)
     }

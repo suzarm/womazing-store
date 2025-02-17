@@ -38,9 +38,9 @@ function Footer() {
                 </ul>
                 <div className="footer-media">
                     <div className="footer-soc-media">
-                        <FontAwesomeIcon icon={faInstagram} />
-                        <FontAwesomeIcon icon={faFacebook} />
-                        <FontAwesomeIcon icon={faTwitter} />
+                        <FontAwesomeIcon icon={faInstagram} size="lg"  />
+                        <FontAwesomeIcon icon={faFacebook} size="lg" />
+                        <FontAwesomeIcon icon={faTwitter} size="lg" />
                     </div>
                     <img src="/images/visa-mastercard 1.png" className="footer-content-img" />
                 </div> 
